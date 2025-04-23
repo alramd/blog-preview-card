@@ -12,19 +12,78 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px
+      
+    }
+    .container {
+      background-color: hsl(49, 100%, 68%);
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    .card {
+      border: solid 2px black;
+      filter: drop-shadow(10px 10px 4px #000000);
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 350px
+
+    }
+    .article-picture {
+      border-radius: 10px;
+    }
+    .blurb {
+      width: 100%;
+    }
+    .profile-picture {
+      width: 30px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    .tag {
+      background-color: hsl(49, 100%, 68%);
+      display: inline-block;
+      font-weight: bold;
+      
+    }
   </style>
+
 </head>
 <body>
+  <div class="container">
+    <div class="card">
+      <img class="article-picture" src="./assets/images/illustration-article.svg" alt="blog article picture">
+      <div class="tag">
+        <p>Learning</p>
+      </div>
+  
+      <p>Published 21 Dec 2023</p>
+  
+      <h1>HTML & CSS foundations</h1>
+  
+      <p class="blurb">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+  
+      <div class="profile">
+        <img class="profile-picture" src="./assets/images/image-avatar.webp" alt="Greg Hooper profile picture"> Greg Hooper
+      </div>
+    </div>
+    
+  </div>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
